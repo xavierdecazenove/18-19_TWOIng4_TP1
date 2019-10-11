@@ -11,16 +11,30 @@ body {
 }
 
 header h1{
-    color: black;
+    color: rgb(92,92,158);
     font-size: 1.5em;
     width: 90%;
     margin: 0 auto;
     padding: 2%;
 }
 
+article h3{
+    color: black;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+section{
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #ededed;
+}
+
 main {
     width: 100%;
-    box-shadow: 0px 0px 10px #222;
+    box-shadow: 0px 0px 2px #777;
+    background-color: white;
 }
 
 
@@ -41,11 +55,22 @@ footer a{
 nav li {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-bottom: 3px;
     display: inline-block;
     position: relative;
     font-size: 18px;
     color: #ededed;
+}
+
+/* Permet l'animation lorsque l'on passe la souris sur la navbar */
+nav li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
 }
 
 nav li a {
@@ -56,18 +81,15 @@ nav li a {
     display: inline-block;
     outline: 0;
     font-weight: 500;
+    border: hidden;
 }
 
-
-section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+li:hover:after {
     width: 100%;
-    padding-bottom: 20px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 10px #bbb;
+    background: white;
 }
+
+/* Fin animation navbar */
 
 p{
     font-size: 1em;
@@ -82,8 +104,100 @@ a{
     width: 100%;
     padding: 20px 0px;
     background: url("img/fondImg.jpg") #4f4f4f;
-    box-shadow: 0px 0px 15px #333;
+    box-shadow: 0px 0px 15px #333333;
 }
+
+.section_contact{
+    width: 100%;
+    background-color: #ededed;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-left: 12%;
+}
+.contact-flex p:first-child{
+    flex: 0 0 10%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 90%;
+}
+
+.reseau_social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+
+.reseau_social img{
+    width: 40px;
+    height: 40px;
+}
+
+/* Style pour le form */
+.form-style{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: rgb(237,237,237);
+}
+
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style textarea,
+.form-style select
+{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+.form-style input[type="text"]:focus,
+.form-style input[type="date"]:focus,
+.form-style input[type="datetime"]:focus,
+.form-style input[type="email"]:focus,
+.form-style input[type="number"]:focus,
+.form-style input[type="search"]:focus,
+.form-style input[type="time"]:focus,
+.form-style input[type="url"]:focus,
+.form-style textarea:focus,
+.form-style select:focus
+{
+    box-shadow: 0 0 5px rgb(92,92,158);
+    padding: 3%;
+    border: 1px solid rgb(92,92,158);
+}
+
+.form-style input[type="submit"]{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    padding: 3%;
+    background: rgb(110,110,158);;
+    color: #ededed;
+}
+
+.form-style input[type="submit"]:hover{
+    background: rgb(92,92,158);
+}
+/* Fin style pour le form */
 
 
 #photo_profil{
@@ -98,7 +212,6 @@ a{
     margin-top: 0px;
 }
 
-
 #titre_pp{
     color: white;
     font-size: 1.5em;
@@ -106,4 +219,14 @@ a{
     margin: 0 auto;
     text-align: center;
     padding: 2%;
+}
+
+@media screen and (min-width: 980px){
+    section{
+        width: 100%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    header h1{
+        width: 80%;
+    }
 }
