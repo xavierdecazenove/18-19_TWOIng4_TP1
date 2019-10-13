@@ -105,7 +105,6 @@ a{
 }
 
 
-
 .navbar{
     position: fixed;
     width: 100%;
@@ -368,7 +367,7 @@ a{
     padding-top: 5%;
     padding-bottom: 5%;
 }
-
+/* Fin mes projets */
 
 #photo_profil{
     display: block;
@@ -391,6 +390,7 @@ a{
     padding: 2%;
 }
 
+/* Cas de petit écran */
 @media screen and (min-width: 980px){
     section{
         width: 100%;
