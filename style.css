@@ -18,17 +18,15 @@ header h1{
     padding: 2%;
 }
 
-article h3{
-    color: black;
-    width: 80%;
-    margin: 0 auto;
-    padding: 2%;
-}
-
 section{
     margin-bottom: 20px;
     width: 100%;
     background-color: #ededed;
+}
+
+section article{
+    width: 90%;
+    padding-left: 5%;
 }
 
 main {
@@ -52,10 +50,10 @@ footer a{
     color: #fff;
 }
 
+
 nav li {
     list-style-type: none;
     margin: 0;
-    padding-bottom: 3px;
     display: inline-block;
     position: relative;
     font-size: 18px;
@@ -74,7 +72,6 @@ nav li:after {
 }
 
 nav li a {
-    margin-top: 20px;
     padding: 15px 26px;
     font-size: 18px;
     color: #ededed;
@@ -107,6 +104,30 @@ a{
     box-shadow: 0px 0px 15px #333333;
 }
 
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    left :0;
+    top: 0;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+    background-color: transparent;
+    transition: 0.3s;
+    height: 60px;
+}
+
+.scrolled{
+    background-color: rgb(92,92,158);
+    transition: 0.3s;
+}
+
+
+
+
+/* Section Contact */
 .section_contact{
     width: 100%;
     background-color: #ededed;
@@ -121,27 +142,70 @@ a{
     padding-left: 12%;
 }
 .contact-flex p:first-child{
-    flex: 0 0 10%;
+    flex: 0 0 20%;
 }
 .contact-flex p:last-child{
-    flex: 0 0 90%;
+    flex: 0 0 80%;
 }
 
-.reseau_social{
+.contact_title{
+    color: black;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.reseaux_sociaux{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 10px auto 0px auto;
 }
 
-.reseau_social img{
-    width: 40px;
-    height: 40px;
+.reseaux_sociaux img{
+    width: 80px;
+    height: 80px;
+}
+
+/* Fin Section Contact */
+
+
+/*SECTION EXP ET FORMATION*/
+.experience{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 2%;
+    margin-bottom: 10px;
+    padding-left: 12%;
+    padding-top: 2%;
+}
+.experience_info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.experience_logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.experience_info{
+    flex: 0 0 75%;
+    margin-left: auto;
+}
+.experience img{
+    width: 100%;
+}
+.experience h3{
+    font-size:  1.2em;
+}
+.experience h4{
+    font-size:  1em;
+    font-weight: normal;
 }
 
 /* Style pour le form */
 .form-style{
     font: 95% Arial, Helvetica, sans-serif;
-    max-width: 400px;
+    max-width: 500px;
     margin: 10px auto;
     padding: 16px;
     background: rgb(237,237,237);
@@ -200,6 +264,45 @@ a{
 /* Fin style pour le form */
 
 
+/* Section competence */
+
+.article_competences{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    width: 90%;
+    background-color: #ededed;
+}
+
+.competences_header{
+    flex: 1 100%;
+    padding-left: 8%;
+    padding-bottom: 2%;
+}
+
+.competences{
+    flex: 0 1 25%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.competences img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+}
+
+/* Fin Compétences */
+
+/* Qui suis-je */
+
+.quisuisje{
+    border-bottom: 2px dashed #ccc;
+}
+
+
 #photo_profil{
     display: block;
     margin-left: auto;
@@ -209,7 +312,7 @@ a{
     border: 3px solid #fff;
     box-shadow: 0px 0px 10px #777;
     border-radius: 50%;
-    margin-top: 0px;
+    margin-top: 5%;
 }
 
 #titre_pp{
@@ -228,5 +331,16 @@ a{
     }
     header h1{
         width: 80%;
+    }
+
+    .experience_logo{
+        flex: 0 0 10%;
+    }
+    .experience_info, .experience_desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .competences{
+        flex: 0 1 25%;
     }
 }

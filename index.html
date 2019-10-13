@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <title>Xavier de Cazenove</title>
 </head>
 <body>
     <header class="db">
-        <img id= "photo_profil" src="img/photo_profil.jpg">
-        <h1 id="titre_pp">Xavier de Cazenove</h1>
-        <nav>
+        <nav class="navbar" id="nav">
             <ul>
                 <li><a href="#about">Qui suis-je ?</a></li>
                 <li><a href="#exp_pro">Expériences professionnelles</a></li>
@@ -21,39 +20,218 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <img id= "photo_profil" src="img/photo_profil.jpg">
+        <h1 id="titre_pp">Xavier de Cazenove</h1>
     </header>
 
     <main>
+
+
         <section>
             <header>
                 <h1 id="about">Qui suis-je ?</h1>
             </header>
+            <article style="width: 80%; margin-left: 7%; padding-bottom: 5%">
+                <p>
+                    En 4ème année d'école d'ingénieur à l'ECE Paris, je suis à la recherche d'un stage
+                    en tant que product owner dans une société travaillant dans les objects connectés. Je suis passionné
+                    par le monde de l'IoT, de l'innovation et de l'entreprenariat.
+                </p>
+            </article>
         </section>
+
+
+
         <section>
             <header>
                 <h1 id="exp_pro">Expériences professionnelles</h1>
             </header>
+            <article>
+                <div class="experience">
+                    <div class="experience_logo">
+                        <a href="#"><img src="img/experiences_formations/auxivia.png" alt="Logo Auxivia"></a>
+                    </div>
+                    <div class="experience_info">
+                        <h3>Assistant chef de projet</h3>
+                        <h4>juillet - aoüt 2019</h4>
+                    </div>
+                    <div class="experience_desc">
+                        <p>Service Qualité : rédaction des procédures de tests, automatisation
+                            et réalisation des tests pour valider les fonctionnalités du verre connecté.</p>
+                        <p>Objectif : trouver des failles dans le système et le fonctionnement du produit.</p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience_logo">
+                        <a href="#"><img src="img/experiences_formations/itracing.png" alt="Logo I-Tracing"></a>
+                    </div>
+                    <div class="experience_info">
+                        <h3>Stage ingénieur</h3>
+                        <h4>juin 2017</h4>
+                    </div>
+                    <div class="experience_desc">
+                        <p>Développement d'une plateforme de gestion électronique de documents
+                            pour organiser et gérer l'information et les dossiers.</p>
+                        <p>Objectif: optimiser le partage de fichiers entre les services commerciaux
+                            et techniques et tester plusieurs logiciels pour évaluer ce qui convient
+                            le mieux à l'entreprise.</p>
+                    </div>
+                </div>
+            </article>
         </section>
+
+
+
         <section>
             <header>
                 <h1 id="formation">Formations</h1>
             </header>
+            <article>
+                <div class="experience">
+                    <div class="experience_logo">
+                        <a href="#"><img src="img/experiences_formations/eceparis.jpg" alt="Logo ECE Paris"></a>
+                    </div>
+                    <div class="experience_info">
+                        <h3>ECE Paris</h3>
+                        <h4>2016 - Aujourd'hui</h4>
+                    </div>
+                    <div class="experience_desc">
+                        <p>Cours: Mathématiques, Physiques, Electroniques, Informatique, Anglais, Finance,
+                            Ethique de l'ingénieur, Management de projet et mis en oeuvre.</p>
+                        <p>Projets: Développement de bracelet connecté permettant de se diriger,
+                            par le biais de vibration, dans la ville.</p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience_logo">
+                        <a href="#"><img src="img/experiences_formations/malmo.png" alt="Logo Malmö"></a>
+                    </div>
+                    <div class="experience_info">
+                        <h3>Malmö University</h3>
+                        <h4>août 2018 - janvier 2019</h4>
+                    </div>
+                    <div class="experience_desc">
+                        <p>Cours: Développement de logiciels, Développement Android & IOS, Internet des Objets.</p>
+                        <p>Projets: Développement de lampes connectées dans une approche de domotique
+                            (Arduino, Android, CloudMQTT) et application de prise de photos permettant
+                            de créer et imprimer des albums de photos (IOS/Swift, Firebase).</p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience_logo">
+                        <a href="#"><img src="img/experiences_formations/latour.jpg" alt="Logo la Tour"></a>
+                    </div>
+                    <div class="experience_info">
+                        <h3>Institut de La Tour</h3>
+                        <h4>2014 - 2016</h4>
+                    </div>
+                    <div class="experience_desc">
+                        <p>Baccalauréat Scientifique avec mention Assez Bien.</p>
+                    </div>
+                </div>
+            </article>
         </section>
+
+
+
         <section>
             <header>
                 <h1 id="projet">Mes projets</h1>
             </header>
         </section>
+
+
+
         <section>
             <header>
                 <h1 id="competences">Mes compétences</h1>
             </header>
+            <article class="article_competences">
+                <header class="competences_header">
+                    <h3>Programmation Hardware</h3>
+                </header>
+                <figure class="competences">
+                    <img src="img/Logo/c.jpg" alt="c">
+                </figure>
+                <figure class="competences">
+                    <img src="img/Logo/c++.png" alt="c++">
+                </figure>
+                <figure class="competences">
+                    <img src="img/Logo/java.png" alt="java">
+                </figure>
+                <figure class="competences">
+                    <img src="img/Logo/swift.jpg" alt="swift">
+                </figure>
+            </article>
+            <article class="article_competences">
+                <header class="competences_header">
+                    <h3>Programmation Web</h3>
+                </header>
+                <figure class="competences">
+                    <img src="img/Logo/html.png" alt="html">
+                </figure>
+                <figure class="competences">
+                    <img src="img/Logo/css.png" alt="css">
+                </figure>
+                <figure class="competences">
+                    <img src="img/Logo/javascript.png" alt="js">
+                </figure>
+                <figure class="competences">
+                    <img src="img/Logo/php.png" alt="php">
+                </figure>
+            </article>
+            <article class="article_competences">
+                <header class="competences_header">
+                    <h3>Programmation Mobile</h3>
+                </header>
+                <figure class="competences">
+                    <img src="img/Logo/android.png" alt="android">
+                </figure>
+                <figure class="competences">
+                    <img src="img/Logo/ios.jpg" alt="ios">
+                </figure>
+            </article>
+            <article class="article_competences">
+                <header class="competences_header">
+                    <h3>Bases de données</h3>
+                </header>
+                <figure class="competences">
+                    <img src="img/Logo/firebase.png" alt="firebase">
+                </figure>
+                <figure class="competences">
+                    <img src="img/Logo/mysql.png" alt="mysql">
+                </figure>
+                <figure class="competences">
+                    <img src="img/Logo/phpmyadmin.png" alt="PhpMyAdmin">
+                </figure>
+            </article>
+            <article class="article_competences">
+                <header class="competences_header">
+                    <h3>Electronique</h3>
+                </header>
+                <figure class="competences">
+                    <img src="img/Logo/arduino.png" alt="arduino">
+                </figure>
+            </article>
+            <article class="article_competences">
+                <header class="competences_header">
+                    <h3>Serveur Cloud</h3>
+                </header>
+                <figure class="competences">
+                    <img src="img/Logo/cloudmqtt.png" alt="cloudmqtt">
+                    <figcaption>Cloud MQTT</figcaption>
+                </figure>
+            </article>
         </section>
+
+
         <section>
             <header>
                 <h1 id="centre_interet">Centres d'intérêts</h1>
             </header>
         </section>
+
+
         <section class="section_contact">
             <header>
                 <h1 id="contact">Contact</h1>
@@ -63,7 +241,7 @@
                     <tbody>
                     <tr>
                         <td>
-                            <h3>Mes coordonnées</h3>
+                            <h3 class="contact_title">Mes coordonnées</h3>
                             <div class="contact-flex">
                                 <p>Nom: </p>
                                 <p>DE CAZENOVE Xavier</p>
@@ -85,7 +263,7 @@
                                 <p>B</p>
                         </td>
                         <td>
-                            <h3>Me contacter</h3>
+                            <h3 class="contact_title">Me contacter</h3>
                             <div class="form-style">
                                 <form>
                                     <p><input type="text" name="field1" placeholder="Votre Nom" /></p>
@@ -98,8 +276,15 @@
                     </tr>
                     </tbody>
                 </table>
+                <div class="reseaux_sociaux">
+                    <a href="https://www.linkedin.com/in/xavier-de-cazenove-6a7b7b150/"><img src="img/reseau_sociaux/linkedin.png" alt="Logo Linkedin"></a>
+                    <a href="https://github.com/xavierdecazenove"><img src="img/reseau_sociaux/github.png" alt="Logo GitHub"></a>
+                </div>
             </article>
         </section>
+
+
+
     </main>
 
     <footer class="db">
@@ -108,6 +293,5 @@
         </p>
         <p>En espérant vous revoir !</p>
     </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </body>
 </html>
