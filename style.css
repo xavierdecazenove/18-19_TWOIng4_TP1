@@ -100,7 +100,7 @@ a{
 .db{
     width: 100%;
     padding: 20px 0px;
-    background: url("img/fondImg.jpg") #4f4f4f;
+    background: url("img/en-tête/fondImg.jpg") #4f4f4f;
     box-shadow: 0px 0px 15px #333333;
 }
 
@@ -300,6 +300,73 @@ a{
 
 .quisuisje{
     border-bottom: 2px dashed #ccc;
+}
+
+
+/* Centre d'intérêt */
+
+.centre_interet{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+}
+
+.interets {
+    flex: 1 1 30%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.interets img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 15px #555;
+}
+
+.interets p{
+    text-align: center;
+    width: 300px;
+    padding-top: 5%;
+}
+
+/**/
+
+
+/* Mes projets*/
+.mes_projets{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+}
+
+.projets{
+    flex: 1 1 20%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projets img {
+    width: auto;
+    height: auto;
+    box-shadow: 0px 0px 15px #555;
+}
+
+.projets video {
+}
+
+.projets p{
+    text-align: center;
+    width: 450px;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 

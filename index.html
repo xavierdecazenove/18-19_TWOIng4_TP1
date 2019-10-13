@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Xavier de Cazenove</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <img id= "photo_profil" src="img/photo_profil.jpg">
+        <img id= "photo_profil" src="img/en-tête/photo_profil.jpg">
         <h1 id="titre_pp">Xavier de Cazenove</h1>
     </header>
 
@@ -46,37 +48,37 @@
             <header>
                 <h1 id="exp_pro">Expériences professionnelles</h1>
             </header>
-            <article>
-                <div class="experience">
-                    <div class="experience_logo">
+            <article data-aos="fade-right" data-aos-duration="1000">
+                <span class="experience">
+                    <span class="experience_logo">
                         <a href="#"><img src="img/experiences_formations/auxivia.png" alt="Logo Auxivia"></a>
-                    </div>
-                    <div class="experience_info">
+                    </span>
+                    <span class="experience_info">
                         <h3>Assistant chef de projet</h3>
                         <h4>juillet - aoüt 2019</h4>
-                    </div>
-                    <div class="experience_desc">
+                    </span>
+                    <span class="experience_desc">
                         <p>Service Qualité : rédaction des procédures de tests, automatisation
                             et réalisation des tests pour valider les fonctionnalités du verre connecté.</p>
                         <p>Objectif : trouver des failles dans le système et le fonctionnement du produit.</p>
-                    </div>
-                </div>
-                <div class="experience">
-                    <div class="experience_logo">
+                    </span>
+                </span>
+                <span class="experience">
+                    <span class="experience_logo">
                         <a href="#"><img src="img/experiences_formations/itracing.png" alt="Logo I-Tracing"></a>
-                    </div>
-                    <div class="experience_info">
+                    </span>
+                    <span class="experience_info">
                         <h3>Stage ingénieur</h3>
                         <h4>juin 2017</h4>
-                    </div>
-                    <div class="experience_desc">
+                    </span>
+                    <span class="experience_desc">
                         <p>Développement d'une plateforme de gestion électronique de documents
                             pour organiser et gérer l'information et les dossiers.</p>
                         <p>Objectif: optimiser le partage de fichiers entre les services commerciaux
                             et techniques et tester plusieurs logiciels pour évaluer ce qui convient
                             le mieux à l'entreprise.</p>
-                    </div>
-                </div>
+                    </span>
+                </span>
             </article>
         </section>
 
@@ -86,49 +88,49 @@
             <header>
                 <h1 id="formation">Formations</h1>
             </header>
-            <article>
-                <div class="experience">
-                    <div class="experience_logo">
+            <article data-aos="fade-left" data-aos-duration="1000">
+                <span class="experience">
+                    <span class="experience_logo">
                         <a href="#"><img src="img/experiences_formations/eceparis.jpg" alt="Logo ECE Paris"></a>
-                    </div>
-                    <div class="experience_info">
+                    </span>
+                    <span class="experience_info">
                         <h3>ECE Paris</h3>
                         <h4>2016 - Aujourd'hui</h4>
-                    </div>
-                    <div class="experience_desc">
+                    </span>
+                    <span class="experience_desc">
                         <p>Cours: Mathématiques, Physiques, Electroniques, Informatique, Anglais, Finance,
                             Ethique de l'ingénieur, Management de projet et mis en oeuvre.</p>
                         <p>Projets: Développement de bracelet connecté permettant de se diriger,
                             par le biais de vibration, dans la ville.</p>
-                    </div>
-                </div>
-                <div class="experience">
-                    <div class="experience_logo">
+                    </span>
+                </span>
+                <span class="experience">
+                    <span class="experience_logo">
                         <a href="#"><img src="img/experiences_formations/malmo.png" alt="Logo Malmö"></a>
-                    </div>
-                    <div class="experience_info">
+                    </span>
+                    <span class="experience_info">
                         <h3>Malmö University</h3>
                         <h4>août 2018 - janvier 2019</h4>
-                    </div>
-                    <div class="experience_desc">
+                    </span>
+                    <span class="experience_desc">
                         <p>Cours: Développement de logiciels, Développement Android & IOS, Internet des Objets.</p>
                         <p>Projets: Développement de lampes connectées dans une approche de domotique
                             (Arduino, Android, CloudMQTT) et application de prise de photos permettant
                             de créer et imprimer des albums de photos (IOS/Swift, Firebase).</p>
-                    </div>
-                </div>
-                <div class="experience">
-                    <div class="experience_logo">
+                    </span>
+                </span>
+                <span class="experience">
+                    <span class="experience_logo">
                         <a href="#"><img src="img/experiences_formations/latour.jpg" alt="Logo la Tour"></a>
-                    </div>
-                    <div class="experience_info">
+                    </span>
+                    <span class="experience_info">
                         <h3>Institut de La Tour</h3>
                         <h4>2014 - 2016</h4>
-                    </div>
-                    <div class="experience_desc">
+                    </span>
+                    <span class="experience_desc">
                         <p>Baccalauréat Scientifique avec mention Assez Bien.</p>
-                    </div>
-                </div>
+                    </span>
+                </span>
             </article>
         </section>
 
@@ -138,6 +140,24 @@
             <header>
                 <h1 id="projet">Mes projets</h1>
             </header>
+            <article class="mes_projets">
+                <span class="projets">
+                    <video controls width="535"
+                           data-aos="fade-up-right"
+                           data-aos-duration="1000"> ><source src="video/veelo.mp4" type="video/mp4"></video>
+                    <p>Notre projet Veelo : Développement d'une solution fasse au trop grand nombre d'accident
+                    à vélo dans les villes. Des dispositifs émetteur de vibration vont venir diriger le cycliste
+                    tout le long de son chemin jusqu'à sa destination</p>
+                </span>
+                <span class="projets">
+                    <img src="img/projets/phillips.jpg" alt="phillips"
+                         data-aos="fade-up-left"
+                         data-aos-duration="1000">
+                    <p>Notre projet d'IoT : Développement de lampes connectées dans une approche de domotique
+                        (Arduino, Android, CloudMQTT) et application de prise de photos permettant de créer
+                        et imprimer des albums de photos (IOS/Swift, Firebase)</p>
+                </span>
+            </article>
         </section>
 
 
@@ -225,10 +245,41 @@
         </section>
 
 
-        <section>
+        <section data-aos="fade-up"
+                 data-aos-anchor-placement="top-center"
+                 data-aos-duration="1000">
             <header>
                 <h1 id="centre_interet">Centres d'intérêts</h1>
             </header>
+            <article class="centre_interet">
+                <span class="interets" >
+                    <img src="img/interets/tennis.jpg">
+                    <p>Tennis en compétition et pour le plaisir</p>
+                </span>
+                <span class="interets">
+                    <img src="img/interets/pingpong.jpg">
+                    <p >Tennis de table, Championnat de France</p>
+                </span>
+                <span class="interets">
+                    <img src="img/interets/rugby.jpg">
+                    <p >Rugby en compétition à 15 et à 7 joueurs</p>
+                </span>
+            </article>
+            <article class="centre_interet">
+                <span class="interets">
+                    <img src="img/interets/equitation.jpg">
+                    <p>Equitation</p>
+                </span>
+                <span class="interets">
+                    <img src="img/interets/bateau.jpeg">
+                    <p >Catamaran</p>
+                </span>
+                <span class="interets">
+                    <img src="img/interets/suf.png">
+                    <p >12 ans de scoutisme dont 2 ans en tant Chef</p>
+                </span>
+            </article>
+
         </section>
 
 
@@ -242,47 +293,47 @@
                     <tr>
                         <td>
                             <h3 class="contact_title">Mes coordonnées</h3>
-                            <div class="contact-flex">
+                            <span class="contact-flex">
                                 <p>Nom: </p>
                                 <p>DE CAZENOVE Xavier</p>
-                            </div>
-                            <div class="contact-flex">
+                            </span>
+                            <span class="contact-flex">
                                 <p>Adresse: </p>
                                 <p>5 rue Pierre Brossolette 92300 Levallois</p>
-                            </div>
-                            <div class="contact-flex">
+                            </span>
+                            <span class="contact-flex">
                                 <p>Mail: </p>
                                 <p>xavier.decazenove@outlook.fr</p>
-                            </div>
-                            <div class="contact-flex">
+                            </span>
+                            <span class="contact-flex">
                                 <p>Téléphone: </p>
                                 <p>07 70 82 10 08</p>
-                            </div>
-                            <div class="contact-flex">
+                            </span>
+                            <span class="contact-flex">
                                 <p>Permis: </p>
                                 <p>B</p>
+                            </span>
                         </td>
                         <td>
                             <h3 class="contact_title">Me contacter</h3>
-                            <div class="form-style">
+                            <span class="form-style">
                                 <form>
                                     <p><input type="text" name="field1" placeholder="Votre Nom" /></p>
                                     <p><input type="email" name="field2" placeholder="E-mail" /></p>
                                     <p><textarea name="field3" placeholder="Ecrivez votre message"></textarea></p>
                                     <p><input type="submit" value="Envoyer" /></p>
                                 </form>
-                            </div>
+                            </span>
                         </td>
                     </tr>
                     </tbody>
                 </table>
-                <div class="reseaux_sociaux">
+                <span class="reseaux_sociaux">
                     <a href="https://www.linkedin.com/in/xavier-de-cazenove-6a7b7b150/"><img src="img/reseau_sociaux/linkedin.png" alt="Logo Linkedin"></a>
                     <a href="https://github.com/xavierdecazenove"><img src="img/reseau_sociaux/github.png" alt="Logo GitHub"></a>
-                </div>
+                </span>
             </article>
         </section>
-
 
 
     </main>
@@ -293,5 +344,10 @@
         </p>
         <p>En espérant vous revoir !</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
