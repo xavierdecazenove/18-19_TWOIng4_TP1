@@ -50,6 +50,9 @@ footer a{
     color: #fff;
 }
 
+nav {
+    z-index: 100;
+}
 
 nav li {
     list-style-type: none;
